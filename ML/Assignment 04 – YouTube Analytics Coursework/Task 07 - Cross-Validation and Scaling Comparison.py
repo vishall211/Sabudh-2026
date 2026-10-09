@@ -1,3 +1,4 @@
+import os
 import pandas as pd
 import matplotlib.pyplot as plt
 
@@ -5,7 +6,8 @@ from sklearn.model_selection import train_test_split, cross_val_score
 from sklearn.preprocessing import StandardScaler, MinMaxScaler
 from sklearn.linear_model import LinearRegression, LogisticRegression
 
-data = pd.read_csv("/Users/vishalsingh/Desktop/SABUDH - 26/ML/Assignment 04 – YouTube Analytics Coursework/USvideos.csv")
+csv_path = os.path.join(os.path.dirname(__file__), "USvideos.csv")
+data = pd.read_csv(csv_path)
 
 # Create required columns
 data["title_length"] = data["title"].str.len()

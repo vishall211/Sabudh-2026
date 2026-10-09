@@ -1,3 +1,4 @@
+import os
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -9,7 +10,8 @@ from sklearn.metrics import (accuracy_score, precision_score, recall_score,
     f1_score, roc_auc_score, confusion_matrix, roc_curve
 )
 
-data = pd.read_csv("/Users/vishalsingh/Desktop/SABUDH - 26/ML/Assignment 04 – YouTube Analytics Coursework/USvideos.csv")
+csv_path = os.path.join(os.path.dirname(__file__), "USvideos.csv")
+data = pd.read_csv(csv_path)
 
 # Create viral column
 threshold = data["views"].quantile(0.75)

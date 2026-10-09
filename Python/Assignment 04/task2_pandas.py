@@ -1,10 +1,14 @@
+import os
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
 # Answer 01 : Load dataset and display first 5 rows
 def load_data():
-    data = pd.read_csv("Python/Assignment 04/1_Sport car price.csv")
+    csv_path = os.path.join(os.path.dirname(__file__), "1_Sport car price.csv")
+    if not os.path.exists(csv_path):
+        csv_path = "Python/Assignment 04/1_Sport car price.csv"
+    data = pd.read_csv(csv_path)
     return data
 
 
@@ -91,7 +95,8 @@ def expensive_cars(data):
 
 # Answer 09 : Export cleaned dataset
 def export_data(data):
-    data.to_csv("Python/Assignment 04/2_cleaned_sports_cars.csv", index=False)
+    output_path = os.path.join(os.path.dirname(__file__), "2_cleaned_sports_cars.csv")
+    data.to_csv(output_path, index=False)
 
 
 if __name__ == "__main__":

@@ -1,7 +1,9 @@
+import os
 import pandas as pd
 import numpy as np
 
-data = pd.read_csv("/Users/vishalsingh/Desktop/SABUDH - 26/ML/Assignment 04 – YouTube Analytics Coursework/USvideos.csv")
+csv_path = os.path.join(os.path.dirname(__file__), "USvideos.csv")
+data = pd.read_csv(csv_path)
 
 print("\nDataset Shape : ", data.shape)     # Dataset shape
 

@@ -1,3 +1,4 @@
+import os
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
@@ -76,7 +77,8 @@ try:
     df = pd.DataFrame(articles)
 
     # Save the data into CSV
-    df.to_csv("NLP/Assignment 01 – Scraping News Articles/Vishal_Indian_express_news.csv", index=False)
+    output_path = os.path.join(os.path.dirname(__file__), "Vishal_Indian_express_news.csv")
+    df.to_csv(output_path, index=False)
 
     print("\n –––– Task Completed Successfully :) –––––\n")
     print("\nTotal articles : ", len(df),"\n")

@@ -1,8 +1,10 @@
+import os
 import pandas as pd
 from scipy.stats import ttest_ind
 
 # Load dataset
-data = pd.read_csv("/Users/vishalsingh/Desktop/SABUDH - 26/ML/Assignment 04 – YouTube Analytics Coursework/USvideos.csv")
+csv_path = os.path.join(os.path.dirname(__file__), "USvideos.csv")
+data = pd.read_csv(csv_path)
 
 # Create groups based on median
 likes_high = data[data["likes"] > data["likes"].median()]["views"]

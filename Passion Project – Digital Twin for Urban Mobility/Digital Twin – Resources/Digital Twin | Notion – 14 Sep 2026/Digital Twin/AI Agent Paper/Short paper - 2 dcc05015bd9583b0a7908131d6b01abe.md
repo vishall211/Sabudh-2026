@@ -1,1 +1,0 @@
-# Short paper - 2

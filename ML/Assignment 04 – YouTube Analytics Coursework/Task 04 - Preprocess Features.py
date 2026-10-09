@@ -1,9 +1,11 @@
+import os
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 
 # Load dataset
-data = pd.read_csv("/Users/vishalsingh/Desktop/SABUDH - 26/ML/Assignment 04 – YouTube Analytics Coursework/USvideos.csv")
+csv_path = os.path.join(os.path.dirname(__file__), "USvideos.csv")
+data = pd.read_csv(csv_path)
 
 data["title_length"] = data["title"].str.len() # Create title length
 
