@@ -1,5 +1,5 @@
 # ==============================================================================
-# Sabudh Foundation — Data Analytics & AI Fellowship (2026)
+# Sabudh Foundation — Data Science Internship (2026)
 # Core Project Dependencies
 # ==============================================================================
 
