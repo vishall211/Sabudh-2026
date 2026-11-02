@@ -1,4 +1,4 @@
-# 🌐 Natural Language Processing (NLP) & Text Analytics
+# Natural Language Processing (NLP) & Text Analytics
 
 This directory contains natural language processing pipelines, web crawlers, text vectorization benchmarks, topic models, and sentiment classification systems developed during the **Sabudh Foundation Data Analytics & AI Fellowship (2026)**.
 
