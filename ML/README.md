@@ -37,6 +37,13 @@ ML/
 │   ├── USvideos.csv                            # US YouTube Trending dataset (40,949 records)
 │   └── Youtube Analytics.pdf
 │
+├── Assignment 05 – Model Evaluation/            # Comprehensive Model Evaluation Problem Set
+│   ├── Answer 01.pdf                           # Detailed analytical solution for Problem 1
+│   ├── Answer 02.pdf                           # Detailed analytical solution for Problem 2
+│   ├── Answer 03.pdf                           # Detailed analytical solution for Problem 3
+│   ├── Answer 04.pdf                           # Detailed analytical solution for Problem 4
+│   └── Model Evaluation - B16 (1)__1773221182-67c994ac8862f33c4e764a16.pdf
+│
 ├── linear_algebra_for_machine_learning.md       # Comprehensive study guide on Linear Algebra for ML
 └── Logistic_Regression.pdf                     # Core concepts presentation & notes
 ```
@@ -71,6 +78,11 @@ An applied machine learning workflow conducted on over 40,000 trending YouTube v
 7. **Cross-Validation & Scaling Study**: 5-fold cross-validation benchmarking `StandardScaler` against `MinMaxScaler`.
 8. **Business Intelligence Report**: Practical creator and marketing recommendations derived from quantitative insights.
 
+### Assignment 05: Model Evaluation Problem Set
+- **Classification Diagnostics**: In-depth analytical evaluation of confusion matrices, Type I ($\alpha$) and Type II ($\beta$) errors, Precision, Recall, Specificity, and $F_\beta$ scores.
+- **Threshold Optimization & ROC-AUC**: Quantitative analysis of operating thresholds, True Positive Rate (TPR) vs. False Positive Rate (FPR) trade-offs, and Area Under the Curve (AUC) invariance under class imbalance.
+- **Validation Schemes**: Hold-out vs. Stratified $K$-fold cross-validation guarantees, data leakage prevention, and model generalization bounds.
+
 ---
 
 ## 🚀 How to Run
@@ -82,4 +94,3 @@ python "ML/Assignment 01 – Linear Regression/Sol_1.py"
 # Run YouTube Analytics Task 01
 python "ML/Assignment 04 – YouTube Analytics Coursework/Task 01 - Load Dataset & Define Targets.py"
 ```
-

@@ -1,11 +1,11 @@
-# 🎓 Sabudh Foundation — Data Sciecne Internship
+# 🎓 Sabudh Foundation — Data Science Internship
 
 [![Python Version](https://img.shields.io/badge/Python-3.10%20%7C%203.11%20%7C%203.12%20%7C%203.13-blue.svg)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-Academic%20Use-green.svg)](#)
 [![Dataiku](https://img.shields.io/badge/Dataiku-Core%20Designer%20Certified-orange.svg)](Dataiku/Core%20Designer%20Certificate.pdf)
 [![Machine Learning](https://img.shields.io/badge/Domain-Data%20Science%20%26%20AI-purple.svg)](#)
 
-> Comprehensive repository of coursework, algorithmic problem sets, machine learning pipelines, natural language processing scrapers, and applied mobility research completed during the **Sabudh Foundation Data Analytics & AI Fellowship (2026)**.
+> Comprehensive repository of coursework, algorithmic problem sets, machine learning pipelines, natural language processing models, and applied mobility research completed during the **Sabudh Foundation Data Analytics & AI Fellowship (2026)**.
 
 ---
 
@@ -47,6 +47,7 @@ SABUDH - 26/
 ├── DSA/                                            # Data Structures & Algorithms
 │   ├── Assignment 01/                              # Arrays, Prefix Sums, Two-Pointers, Binary Search
 │   ├── Assignment 02/                              # Singly Linked Lists (Pointers, Reversal, Math)
+│   ├── Assignment 03/                              # Heaps, LRU Cache, Matrices & Linked Lists
 │   └── README.md
 │
 ├── ML/                                             # Machine Learning & Applied Analytics
@@ -54,12 +55,15 @@ SABUDH - 26/
 │   ├── Assignment 02 – Logistic Regression/        # Logistic Regression & label flipping simulation
 │   ├── Assignment 03 – Bayesian Learning Problem Set/ # Bayesian inference & coursework
 │   ├── Assignment 04 – YouTube Analytics Coursework/  # End-to-end Machine Learning pipeline (40k+ videos)
+│   ├── Assignment 05 – Model Evaluation/           # Precision, Recall, ROC-AUC & Error Diagnostics
 │   ├── linear_algebra_for_machine_learning.md      # Comprehensive Linear Algebra study notes
 │   ├── Logistic_Regression.pdf                     # Core classification lecture slides & notes
 │   └── README.md
 │
-├── NLP/                                            # Natural Language Processing & Scraping
+├── NLP/                                            # Natural Language Processing & Text Analytics
 │   ├── Assignment 01 – Scraping News Articles/     # Indian Express news scraper (BeautifulSoup)
+│   ├── Assignment 02 – Question Identification/    # Syntactic & Semantic Question vs Sentence Classification
+│   ├── Assignment 03 – Analysing Customer Reviews/ # spaCy NER, Word2Vec, LDA Topic Modeling & Sentiment Classifiers
 │   └── README.md
 │
 ├── Passion Project – Digital Twin for Urban Mobility/ # Capstone Research Project
@@ -106,6 +110,12 @@ SABUDH - 26/
   - Duplicate elimination in sorted lists.
   - In-place singly linked list reversal.
   - Base-10 arithmetic addition on linked list numbers.
+- **Assignment 03 (Advanced Structures & Patterns)**:
+  - Product of Array Except Self without division ($O(n)$ time, $O(1)$ space).
+  - Staircase 2D matrix search ($O(m + n)$ time).
+  - Merge $K$ sorted lists using min-heap priority queue ($O(N \log K)$).
+  - LRU Cache with $O(1)$ `get` and `put` operations via `OrderedDict`.
+  - Stack-based adjacent duplicate character elimination.
 
 👉 *Details in [`DSA/README.md`](DSA/README.md)*
 
@@ -129,6 +139,9 @@ SABUDH - 26/
   - **Linear Regression**: $R^2 = 0.904$ for view prediction.
   - **Logistic Regression**: $93.77\%$ accuracy, $98.26\%$ ROC-AUC.
   - 5-Fold cross-validation and comparative analysis between `StandardScaler` and `MinMaxScaler`.
+- **Assignment 05 (Model Evaluation Diagnostics)**:
+  - Rigorous evaluation of precision, recall, specificity, and $F_\beta$ scores under class skew.
+  - Decision threshold optimization, ROC-AUC trade-offs, and confusion matrix error decomposition.
 - **Foundational Notes**: Detailed tutorial guide on Linear Algebra for Machine Learning (`linear_algebra_for_machine_learning.md`).
 
 👉 *Details in [`ML/README.md`](ML/README.md)*
@@ -139,7 +152,18 @@ SABUDH - 26/
 - **Assignment 01 (Automated Web Scraping Pipeline)**:
   - Scrapes news headlines and content dynamically from *The Indian Express*.
   - Extracts clean article bodies using `BeautifulSoup` parsing from the `.story_details` container.
-  - Robust error recovery, rate limiting, and output persistence to `Vishal_Indian_express_news.csv`.
+  - Robust error recovery, polite rate limiting, and output persistence to `Vishal_Indian_express_news.csv`.
+- **Assignment 02 (Question Identification in Educational Transcripts)**:
+  - Preprocesses over 235k lecture transcript utterances into clean text pairs.
+  - Benchmarks syntactic (BoW, Word TF-IDF, Character TF-IDF) and semantic (Word2Vec) representations.
+  - Evaluates Linear SVM, Logistic Regression, and Naive Bayes classifiers.
+  - **Top Benchmark**: **Character TF-IDF + Linear SVM** achieving **0.9912 Accuracy** and **0.9986 ROC-AUC**.
+- **Assignment 03 (Customer Reviews & Sentiment Analytics)**:
+  - End-to-end analysis on Amazon beauty product customer reviews.
+  - spaCy linguistic pipeline with POS filtering (Nouns/Adjectives) and Named Entity Recognition (NER).
+  - TF-IDF cosine similarity matrices and continuous Word2Vec embeddings projected into 2D via TruncatedSVD & PCA.
+  - Latent Dirichlet Allocation (LDA) topic modeling tuned with Gensim's `CoherenceModel` ($c_v$), word clouds, and topic-specific sentiment distributions.
+  - Supervised sentiment classifiers (MultinomialNB, BernoulliNB, Logistic Regression); **Logistic Regression** achieves **0.8524 Accuracy** and **0.9235 ROC-AUC**.
 
 👉 *Details in [`NLP/README.md`](NLP/README.md)*
 
@@ -148,7 +172,7 @@ SABUDH - 26/
 ### 5. Passion Project: Digital Twin for Urban Mobility
 - **Vision**: Designing a multimodal Digital Twin leveraging real-time GTFS transit telemetry and autonomous multi-agent systems to alleviate urban congestion and optimize route scheduling.
 - **Deliverables**:
-  - Preliminary Research Report (17 Sep 2026).
+  - Preliminary Research Report.
   - Literature Review Presentation Deck (`.pptx`).
   - Synthesized research notes on AI Agent frameworks and decentralized mobility coordination.
 
@@ -167,7 +191,7 @@ SABUDH - 26/
 ## 🛠 Environment Setup & Installation
 
 ### Prerequisites
-- Python 3.10+ (Recommended: Python 3.11 or 3.12 / 3.13)
+- Python 3.10+ (Recommended: Python 3.11 or 3.12)
 - `git`
 
 ### Quickstart
@@ -195,6 +219,11 @@ SABUDH - 26/
    pip install -r requirements.txt
    ```
 
+4. **Download spaCy language model** (for NLP assignments):
+   ```bash
+   python -m spacy download en_core_web_lg
+   ```
+
 ---
 
 ## 💻 How to Run
@@ -202,16 +231,19 @@ SABUDH - 26/
 All scripts utilize portable dynamic relative pathing, allowing them to be run either from the repository root or directly from their respective subdirectories:
 
 ```bash
-# 1. Run YouTube Analytics Task 01
+# 1. Run Machine Learning YouTube Analytics
 python "ML/Assignment 04 – YouTube Analytics Coursework/Task 01 - Load Dataset & Define Targets.py"
 
-# 2. Run Linear Regression from Scratch
-python "ML/Assignment 01 – Linear Regression/Sol_1.py"
+# 2. Run NLP Question Identification
+python "NLP/Assignment 02 – Question Identification/Question_Identification.py"
 
-# 3. Run DSA Linked List Middle Element Finder
-python "DSA/Assignment 02/Sol_01.py"
+# 3. Run NLP Customer Beauty Reviews Pipeline
+python "NLP/Assignment 03 – Analysing Customer Reviews/Beauty_Reviews.py"
 
-# 4. Run Python Pandas Data Cleaning & Aggregation
+# 4. Run DSA LRU Cache / Heap Merging
+python "DSA/Assignment 03/Sol_05.py"
+
+# 5. Run Python Pandas Data Cleaning
 python "Python/Assignment 04/task2_pandas.py"
 ```
 
@@ -223,9 +255,10 @@ python "Python/Assignment 04/task2_pandas.py"
 |---|---|
 | **Programming Language** | Python 3.x |
 | **Numerical & Data Analysis** | NumPy, Pandas, SciPy |
-| **Data Visualization** | Matplotlib, Seaborn |
+| **Data Visualization** | Matplotlib, Seaborn, WordCloud |
 | **Machine Learning** | Scikit-Learn |
-| **Web Scraping & NLP** | Requests, BeautifulSoup4 |
+| **Natural Language Processing (NLP)** | spaCy, Gensim |
+| **Web Scraping** | Requests, BeautifulSoup4 |
+| **Interactive Computing** | Jupyter Notebook, IPython Kernel |
 | **Enterprise Platform** | Dataiku DSS |
 | **Version Control** | Git, GitHub |
-

@@ -380,8 +380,9 @@ print(predict_question("Machine learning is a part of artificial intelligence.")
 # 15. Save the model comparison results
 # ------------------------------------------------------------------------------------
 
-results_df.to_csv("question_identification_model_results.csv", index=False)
-print("\nModel results saved to question_identification_model_results.csv")
+output_csv = Path(__file__).resolve().parent / "question_identification_model_results.csv"
+results_df.to_csv(output_csv, index=False)
+print(f"\nModel results saved to {output_csv.name}")
 
 
 # Conclusion:
