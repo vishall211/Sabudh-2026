@@ -88,3 +88,4 @@ The Sigmoid derivative cancels out, yielding simplified, numerically stable grad
 - **Output Bias**: $\frac{\partial L}{\partial w_{0op}} = \hat{y} - y$
 - **Hidden Weights ($H_3$)**: $\frac{\partial L}{\partial w_{i3}} = (\hat{y} - y) \cdot w_{3op} \cdot H_3(1 - H_3) \cdot x_i$
 - **Hidden Bias ($H_3$)**: $\frac{\partial L}{\partial w_{03}} = (\hat{y} - y) \cdot w_{3op} \cdot H_3(1 - H_3)$
+

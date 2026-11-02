@@ -50,6 +50,7 @@ SABUDH - 26/
 │   ├── Assignment 01/                              # Arrays, Prefix Sums, Two-Pointers, Binary Search
 │   ├── Assignment 02/                              # Singly Linked Lists (Pointers, Reversal, Math)
 │   ├── Assignment 03/                              # Heaps, LRU Cache, Matrices & Linked Lists
+│   ├── Assignment 04/                              # Bit Manipulation, Kadane's Algorithm & Linked Lists
 │   └── README.md
 │
 ├── ML/                                             # Machine Learning & Applied Analytics
@@ -131,6 +132,12 @@ SABUDH - 26/
   - Merge $K$ sorted lists using min-heap priority queue ($O(N \log K)$).
   - LRU Cache with $O(1)$ `get` and `put` operations via `OrderedDict`.
   - Stack-based adjacent duplicate character elimination.
+- **Assignment 04 (Bitwise Logic, Kadane's Algorithm & Advanced Pointers)**:
+  - Single Number III using bitwise XOR and rightmost set bit isolation (`xor & -xor`).
+  - Maximum contiguous subarray sum via **Kadane's Algorithm** in $O(n)$ time.
+  - Symmetrical twin sum in linked lists and iterative sorted list merging.
+  - Memory-efficient sparse vector dot product representation.
+  - Two-pointer trapping rainwater computation.
 
 👉 *Details in [`DSA/README.md`](DSA/README.md)*
 
