@@ -5,7 +5,7 @@
 [![Dataiku](https://img.shields.io/badge/Dataiku-Core%20Designer%20Certified-orange.svg)](Dataiku/Core%20Designer%20Certificate.pdf)
 [![Machine Learning](https://img.shields.io/badge/Domain-Data%20Science%20%26%20AI-purple.svg)](#)
 
-> Comprehensive repository of coursework, algorithmic problem sets, machine learning pipelines, natural language processing models, relational database architectures, and applied mobility research completed during the **Sabudh Foundation Data Analytics & AI Fellowship (2026)**.
+> Comprehensive repository of coursework, algorithmic problem sets, machine learning pipelines, deep learning architectures, natural language processing models, relational database architectures, and applied mobility research completed during the **Sabudh Foundation Data Science Internship (2026)**.
 
 ---
 
@@ -25,8 +25,9 @@
    - [3. Machine Learning (ML)](#3-machine-learning-ml)
    - [4. Natural Language Processing (NLP)](#4-natural-language-processing-nlp)
    - [5. Structured Query Language (SQL)](#5-structured-query-language-sql)
-   - [6. Passion Project: Digital Twin for Urban Mobility](#6-passion-project-digital-twin-for-urban-mobility)
-   - [7. Certifications & Curriculum](#7-certifications--curriculum)
+   - [6. Deep Learning (DL)](#6-deep-learning-dl)
+   - [7. Passion Project: Digital Twin for Urban Mobility](#7-passion-project-digital-twin-for-urban-mobility)
+   - [8. Certifications & Curriculum](#8-certifications--curriculum)
 3. [Environment Setup & Installation](#-environment-setup--installation)
 4. [How to Run](#-how-to-run)
 5. [Tech Stack & Dependencies](#-tech-stack--dependencies)
@@ -72,6 +73,12 @@ SABUDH - 26/
 │   │   ├── Financial Services Database.sql         # Schema DDL & comprehensive seed data
 │   │   ├── Vishal Singh_FinanceHub_Assignment.sql  # 25 analytical SQL solutions & BI queries
 │   │   └── SQL Coursework_ FINANCIAL SERVICES DATABASE.pdf
+│   └── README.md
+│
+├── DL/                                             # Deep Learning & Neural Networks
+│   ├── Assignment 01/                              # Multilayer Perceptron (MLP) Foundations
+│   │   ├── B16 MLP Coursework.pdf                  # Problem statements & network diagram
+│   │   └── Solution – MLP Assignment 01.pdf        # Analytical derivations & gradient proofs
 │   └── README.md
 │
 ├── Passion Project – Digital Twin for Urban Mobility/ # Capstone Research Project
@@ -190,7 +197,19 @@ SABUDH - 26/
 
 ---
 
-### 6. Passion Project: Digital Twin for Urban Mobility
+### 6. Deep Learning (DL)
+- **Assignment 01 (Multilayer Perceptron Foundations)**:
+  - Network architecture with 3 inputs, 3 hidden neurons with Sigmoid activations, and 1 output Sigmoid neuron (16 trainable parameters).
+  - Complete forward transformation equations across hidden and output layers.
+  - Analytical backpropagation and gradient derivations under Mean Squared Error (MSE) loss.
+  - Multiclass classification analysis (evaluating Softmax vs Sigmoid) and multi-output topology expansions.
+  - Analytical proof of derivative cancellation and gradient simplification under Binary Cross-Entropy (BCE) loss.
+
+👉 *Details in [`DL/README.md`](DL/README.md)*
+
+---
+
+### 7. Passion Project: Digital Twin for Urban Mobility
 - **Vision**: Designing a multimodal Digital Twin leveraging real-time GTFS transit telemetry and autonomous multi-agent systems to alleviate urban congestion and optimize route scheduling.
 - **Deliverables**:
   - Preliminary Research Report.
@@ -201,7 +220,7 @@ SABUDH - 26/
 
 ---
 
-### 7. Certifications & Curriculum
+### 8. Certifications & Curriculum
 - **Dataiku Core Designer Certificate**: Verified credential demonstrating competency in visual data prep, flow orchestration, exploratory analytics, and machine learning deployments.
 - **Fellowship Curriculum (`DA-Curriculum.pdf`)**: Comprehensive program roadmap detailing Python, DSA, Statistics, Machine Learning, and Big Data modules.
 
@@ -285,6 +304,7 @@ mysql -u root -p FinanceHub < "SQL/Final Coursework/Vishal Singh_FinanceHub_Assi
 |---|---|
 | **Programming Language** | Python 3.x |
 | **Relational Databases & SQL** | MySQL, Window Functions, Recursive CTEs, DDL/DML |
+| **Deep Learning (DL)** | Multilayer Perceptron (MLP), Backpropagation, Gradient Descent |
 | **Numerical & Data Analysis** | NumPy, Pandas, SciPy |
 | **Data Visualization** | Matplotlib, Seaborn, WordCloud |
 | **Machine Learning** | Scikit-Learn |
