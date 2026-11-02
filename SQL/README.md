@@ -9,9 +9,9 @@ This directory contains database schemas, complex analytical queries, recursive 
 ```text
 SQL/
 ├── Final Coursework/
-│   ├── Financial Services Database.sql              # Relational schema DDL & comprehensive seed data
-│   ├── Vishal Singh_FinanceHub_Assignment.sql       # 25 production-grade SQL solutions & analytical queries
-│   └── SQL Coursework_ FINANCIAL SERVICES DATABASE.pdf # Assignment specification & problem statements
+│   ├── Financial Services Database.sql              # Dataset
+│   ├── Vishal Singh_FinanceHub_Assignment.sql       # Solution of the 25 problem statements
+│   └── SQL Coursework_ FINANCIAL SERVICES DATABASE.pdf # Assignment / problem statements
 └── README.md                                        # SQL module documentation
 ```
 
