@@ -5,7 +5,7 @@
 [![Dataiku](https://img.shields.io/badge/Dataiku-Core%20Designer%20Certified-orange.svg)](Dataiku/Core%20Designer%20Certificate.pdf)
 [![Machine Learning](https://img.shields.io/badge/Domain-Data%20Science%20%26%20AI-purple.svg)](#)
 
-> Comprehensive repository of coursework, algorithmic problem sets, machine learning pipelines, natural language processing models, and applied mobility research completed during the **Sabudh Foundation Data Analytics & AI Fellowship (2026)**.
+> Comprehensive repository of coursework, algorithmic problem sets, machine learning pipelines, natural language processing models, relational database architectures, and applied mobility research completed during the **Sabudh Foundation Data Analytics & AI Fellowship (2026)**.
 
 ---
 
@@ -24,8 +24,9 @@
    - [2. Data Structures & Algorithms (DSA)](#2-data-structures--algorithms-dsa)
    - [3. Machine Learning (ML)](#3-machine-learning-ml)
    - [4. Natural Language Processing (NLP)](#4-natural-language-processing-nlp)
-   - [5. Passion Project: Digital Twin for Urban Mobility](#5-passion-project-digital-twin-for-urban-mobility)
-   - [6. Certifications & Curriculum](#6-certifications--curriculum)
+   - [5. Structured Query Language (SQL)](#5-structured-query-language-sql)
+   - [6. Passion Project: Digital Twin for Urban Mobility](#6-passion-project-digital-twin-for-urban-mobility)
+   - [7. Certifications & Curriculum](#7-certifications--curriculum)
 3. [Environment Setup & Installation](#-environment-setup--installation)
 4. [How to Run](#-how-to-run)
 5. [Tech Stack & Dependencies](#-tech-stack--dependencies)
@@ -64,6 +65,13 @@ SABUDH - 26/
 │   ├── Assignment 01 – Scraping News Articles/     # Indian Express news scraper (BeautifulSoup)
 │   ├── Assignment 02 – Question Identification/    # Syntactic & Semantic Question vs Sentence Classification
 │   ├── Assignment 03 – Analysing Customer Reviews/ # spaCy NER, Word2Vec, LDA Topic Modeling & Sentiment Classifiers
+│   └── README.md
+│
+├── SQL/                                            # Relational Database Analytics & Modeling
+│   ├── Final Coursework/                           # FinanceHub Banking & Financial Services Database
+│   │   ├── Financial Services Database.sql         # Schema DDL & comprehensive seed data
+│   │   ├── Vishal Singh_FinanceHub_Assignment.sql  # 25 analytical SQL solutions & BI queries
+│   │   └── SQL Coursework_ FINANCIAL SERVICES DATABASE.pdf
 │   └── README.md
 │
 ├── Passion Project – Digital Twin for Urban Mobility/ # Capstone Research Project
@@ -169,7 +177,20 @@ SABUDH - 26/
 
 ---
 
-### 5. Passion Project: Digital Twin for Urban Mobility
+### 5. Structured Query Language (SQL)
+- **FinanceHub Banking & Financial Services Database**:
+  - Relational schema spanning 11 core banking entities (Customers, Accounts, Transactions, Loans, LoanPayments, CreditCards, CardTransactions, Investments, Employees, Branches, FraudAlerts).
+  - **Advanced Querying**: 25 comprehensive analytical queries solving real-world financial operations.
+  - **Window Functions**: Running account balances (`FIRST_VALUE` + `SUM OVER`), credit card utilization ranking (`RANK OVER PARTITION`), month-over-month growth (`LAG OVER`), and balance percentile ranks (`PERCENT_RANK OVER`).
+  - **Recursive CTEs**: Multi-level employee-manager organizational reporting hierarchies (`WITH RECURSIVE`).
+  - **Data Auditing**: Automated detection of negative balances, loan over-extensions, and ledger discrepancies.
+  - **Executive BI Dashboard**: Aggregates customer risk tiers, cash flows, card utilization, and loan health into a consolidated KPI report.
+
+👉 *Details in [`SQL/README.md`](SQL/README.md)*
+
+---
+
+### 6. Passion Project: Digital Twin for Urban Mobility
 - **Vision**: Designing a multimodal Digital Twin leveraging real-time GTFS transit telemetry and autonomous multi-agent systems to alleviate urban congestion and optimize route scheduling.
 - **Deliverables**:
   - Preliminary Research Report.
@@ -180,7 +201,7 @@ SABUDH - 26/
 
 ---
 
-### 6. Certifications & Curriculum
+### 7. Certifications & Curriculum
 - **Dataiku Core Designer Certificate**: Verified credential demonstrating competency in visual data prep, flow orchestration, exploratory analytics, and machine learning deployments.
 - **Fellowship Curriculum (`DA-Curriculum.pdf`)**: Comprehensive program roadmap detailing Python, DSA, Statistics, Machine Learning, and Big Data modules.
 
@@ -192,6 +213,7 @@ SABUDH - 26/
 
 ### Prerequisites
 - Python 3.10+ (Recommended: Python 3.11 or 3.12)
+- MySQL 8.0+ (or compatible RDBMS / SQL client such as DBeaver)
 - `git`
 
 ### Quickstart
@@ -228,8 +250,7 @@ SABUDH - 26/
 
 ## 💻 How to Run
 
-All scripts utilize portable dynamic relative pathing, allowing them to be run either from the repository root or directly from their respective subdirectories:
-
+### Python & Machine Learning Scripts
 ```bash
 # 1. Run Machine Learning YouTube Analytics
 python "ML/Assignment 04 – YouTube Analytics Coursework/Task 01 - Load Dataset & Define Targets.py"
@@ -247,6 +268,15 @@ python "DSA/Assignment 03/Sol_05.py"
 python "Python/Assignment 04/task2_pandas.py"
 ```
 
+### SQL Relational Database Queries
+```bash
+# Initialize FinanceHub database
+mysql -u root -p < "SQL/Final Coursework/Financial Services Database.sql"
+
+# Execute assignment solutions
+mysql -u root -p FinanceHub < "SQL/Final Coursework/Vishal Singh_FinanceHub_Assignment.sql"
+```
+
 ---
 
 ## 📦 Tech Stack & Dependencies
@@ -254,6 +284,7 @@ python "Python/Assignment 04/task2_pandas.py"
 | Category | Technologies / Libraries |
 |---|---|
 | **Programming Language** | Python 3.x |
+| **Relational Databases & SQL** | MySQL, Window Functions, Recursive CTEs, DDL/DML |
 | **Numerical & Data Analysis** | NumPy, Pandas, SciPy |
 | **Data Visualization** | Matplotlib, Seaborn, WordCloud |
 | **Machine Learning** | Scikit-Learn |

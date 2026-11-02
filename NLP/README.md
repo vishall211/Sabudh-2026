@@ -16,7 +16,6 @@ NLP/
 ├── Assignment 02 – Question Identification/
 │   ├── Question_Identification.py          # Complete ML pipeline for question vs sentence classification
 │   ├── Question_Identification.ipynb       # Interactive notebook with visualizations and ROC analysis
-│   ├── Sol_01.py                           # Solution wrapper entrypoint
 │   ├── question_identification_model_results.csv # Benchmarked classifier metrics table
 │   ├── Data Set _Question Identification.csv # Raw lecture transcripts dataset (235k+ rows)
 │   └── Question Identification.pdf         # Coursework problem statement
