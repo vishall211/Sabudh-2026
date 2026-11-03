@@ -2,7 +2,7 @@
 
 [![Python Version](https://img.shields.io/badge/Python-3.10%20%7C%203.11%20%7C%203.12%20%7C%203.13-blue.svg)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-Academic%20Use-green.svg)](#)
-[![Dataiku](https://img.shields.io/badge/Dataiku-Core%20Designer%20Certified-orange.svg)](Dataiku/Core%20Designer%20Certificate.pdf)
+[![Dataiku](https://img.shields.io/badge/Dataiku-5x%20Certified%20Practitioner-orange.svg)](Dataiku/README.md)
 [![Machine Learning](https://img.shields.io/badge/Domain-Data%20Science%20%26%20AI-purple.svg)](#)
 
 > Comprehensive repository of coursework, algorithmic problem sets, machine learning pipelines, deep learning architectures, natural language processing models, relational database architectures, and applied mobility research completed during the **Sabudh Foundation Data Science Internship (2026)**.
@@ -88,7 +88,11 @@ SABUDH - 26/
 │   └── README.md
 │
 ├── Dataiku/                                        # Enterprise Data Science Certifications
-│   ├── Core Designer Certificate.pdf               # Verified Dataiku DSS Certificate
+│   ├── 1_Core Designer Certificate.pdf             # Core visual data flow & preparation
+│   ├── 2_Advanced Designer Certificate.pdf         # Advanced pipeline automation & variables
+│   ├── 3_ML Practitioner Certificate.pdf          # Visual AutoML & feature engineering
+│   ├── 4_MLOps Practitioner Certificate.pdf       # Model deployment, drift & monitoring
+│   ├── 5_Generative Al Practitioner Certificate.pdf # Enterprise LLM & RAG workflows
 │   └── README.md
 │
 ├── DA-Curriculum.pdf                               # Comprehensive Fellowship Syllabus & Roadmap
@@ -228,8 +232,13 @@ SABUDH - 26/
 ---
 
 ### 8. Certifications & Curriculum
-- **Dataiku Core Designer Certificate**: Verified credential demonstrating competency in visual data prep, flow orchestration, exploratory analytics, and machine learning deployments.
-- **Fellowship Curriculum (`DA-Curriculum.pdf`)**: Comprehensive program roadmap detailing Python, DSA, Statistics, Machine Learning, and Big Data modules.
+- **Dataiku 5x Certified Practitioner Suite**: Five verified enterprise credentials from Dataiku Academy:
+  - **Core Designer**: Visual data prep, join recipes, and exploratory dashboards.
+  - **Advanced Designer**: Scenarios, partitioning, project variables, and code recipes.
+  - **ML Practitioner**: Visual AutoML, hyperparameter tuning, model diagnostics, and Explainable AI.
+  - **MLOps Practitioner**: Model deployment, versioning, drift monitoring, and automated retraining.
+  - **Generative AI Practitioner**: LLM integration, prompt engineering, RAG pipelines, and vector embeddings.
+- **Fellowship Curriculum (`DA-Curriculum.pdf`)**: Comprehensive program roadmap detailing Python, DSA, Statistics, Machine Learning, Deep Learning, and Big Data modules.
 
 👉 *Details in [`Dataiku/README.md`](Dataiku/README.md)*
 
