@@ -51,6 +51,7 @@ SABUDH - 26/
 │   ├── Assignment 02/                              # Singly Linked Lists (Pointers, Reversal, Math)
 │   ├── Assignment 03/                              # Heaps, LRU Cache, Matrices & Linked Lists
 │   ├── Assignment 04/                              # Bit Manipulation, Kadane's Algorithm & Linked Lists
+│   ├── Assignment 05/                              # Monotonic Stack, MinStack, Queues & Linked Lists
 │   └── README.md
 │
 ├── ML/                                             # Machine Learning & Applied Analytics
@@ -142,6 +143,12 @@ SABUDH - 26/
   - Symmetrical twin sum in linked lists and iterative sorted list merging.
   - Memory-efficient sparse vector dot product representation.
   - Two-pointer trapping rainwater computation.
+- **Assignment 05 (Monotonic Stack, MinStack, Queues & Linked Lists)**:
+  - Reverse Linked List II (`Sol 01.py`) with in-place pointer manipulation between given index bounds.
+  - Odd Even Linked List (`Sol 02.py`) regrouping nodes by index parity in $O(n)$ time and $O(1)$ space.
+  - Maximal Rectangle (`Sol 03.py`) in binary matrices using histogram heights and a monotonic stack.
+  - Min Stack design (`Sol 04.py`) with $O(1)$ push, pop, top, and getMin.
+  - Cross-structure ADTs: Stack using Queues (`Sol 05.py`) and Queue using Stacks (`Sol 06.py`).
 
 👉 *Details in [`DSA/README.md`](DSA/README.md)*
 

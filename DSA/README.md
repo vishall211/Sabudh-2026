@@ -39,15 +39,24 @@ DSA/
 │   ├── Sol_08.py           # Remove All Adjacent Duplicates in String (LIFO Stack)
 │   └── Weekly Code 3 .pdf
 │
-└── Assignment 04/          # Linked Lists, Bit Manipulation, Kadane's Algorithm & Sparse Vectors
-    ├── Sol_01.py           # Insert a node at the beginning of a Linked List (O(1))
-    ├── Sol_02.py           # Maximum Twin Sum of a Linked List (Equidistant pair sums)
-    ├── Sol_03.py           # Merge Two Sorted Linked Lists (Iterative with dummy head)
-    ├── Sol_04.py           # Single Number III (Bitwise XOR & rightmost set bit partitioning)
-    ├── Sol_05.py           # Dot Product of Two Sparse Vectors (Index-Hash representation)
-    ├── Sol_06.py           # Trapping Rain Water (Two-pointer bounded water computation)
-    ├── Sol_07.py           # Maximum Subarray Sum (Kadane's Algorithm in O(n) time)
-    └── Week_4_coding challenge.pdf
+├── Assignment 04/          # Linked Lists, Bit Manipulation, Kadane's Algorithm & Sparse Vectors
+│   ├── Sol_01.py           # Insert a node at the beginning of a Linked List (O(1))
+│   ├── Sol_02.py           # Maximum Twin Sum of a Linked List (Equidistant pair sums)
+│   ├── Sol_03.py           # Merge Two Sorted Linked Lists (Iterative with dummy head)
+│   ├── Sol_04.py           # Single Number III (Bitwise XOR & rightmost set bit partitioning)
+│   ├── Sol_05.py           # Dot Product of Two Sparse Vectors (Index-Hash representation)
+│   ├── Sol_06.py           # Trapping Rain Water (Two-pointer bounded water computation)
+│   ├── Sol_07.py           # Maximum Subarray Sum (Kadane's Algorithm in O(n) time)
+│   └── Week_4_coding challenge.pdf
+│
+└── Assignment 05/          # Linked Lists, Monotonic Stacks, Min Stack & Stack/Queue Design
+    ├── Sol 01.py           # Reverse Linked List II (In-place reversal between bounds left and right)
+    ├── Sol 02.py           # Odd Even Linked List (Reorder nodes by parity of their index in O(1) space)
+    ├── Sol 03.py           # Maximal Rectangle (Largest rectangle in binary matrix via monotonic stack)
+    ├── Sol 04.py           # Min Stack (LIFO stack with O(1) push, pop, top, and getMin)
+    ├── Sol 05.py           # Implement Stack using Queues (LIFO stack using collections.deque)
+    ├── Sol 06.py           # Implement Queue using Stacks (FIFO queue using two stacks with amortized O(1))
+    └── Weekly Code 5 - B16 (1)__1793707486-67c994ac8862f33c4e764a16.pdf
 ```
 
 ---
@@ -85,6 +94,12 @@ DSA/
 - **LRU Cache (`Assignment 03/Sol_05.py`)**: Implements an eviction-ready Least Recently Used cache with $O(1)$ read and write complexity using `collections.OrderedDict`.
 - **Stack-based String Reductions (`Assignment 03/Sol_08.py`)**: Evaluates adjacent character equivalence using a LIFO stack to cancel duplicate pairs in linear time.
 
+### 8. Stacks, Queues & Monotonic Data Structures
+- **Sublist Reversal & Parity Partitioning (`Assignment 05/Sol 01.py`, `Sol 02.py`)**: In-place reversal of sublists between index bounds and grouping nodes by odd-even index parity in $O(n)$ time and $O(1)$ auxiliary space.
+- **Maximal Rectangle (`Assignment 05/Sol 03.py`)**: Converts binary matrix rows into running histogram heights and computes the maximal rectangular area using a monotonic increasing stack in $O(R \times C)$ time.
+- **Min Stack (`Assignment 05/Sol 04.py`)**: Tracks running minimums alongside the main stack to achieve $O(1)$ time for push, pop, top, and getMin.
+- **Cross-Structure Implementations (`Assignment 05/Sol 05.py`, `Sol 06.py`)**: Implements a LIFO stack using FIFO queues (`deque`) and a FIFO queue using dual LIFO stacks with amortized $O(1)$ push and pop operations.
+
 ---
 
 ## 🚀 How to Run
@@ -106,4 +121,9 @@ python "DSA/Assignment 03/Sol_05.py"
 python "DSA/Assignment 04/Sol_03.py"
 python "DSA/Assignment 04/Sol_04.py"
 python "DSA/Assignment 04/Sol_07.py"
+
+# Assignment 05
+python "DSA/Assignment 05/Sol 01.py"
+python "DSA/Assignment 05/Sol 03.py"
+python "DSA/Assignment 05/Sol 04.py"
 ```
