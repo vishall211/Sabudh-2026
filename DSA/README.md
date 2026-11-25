@@ -49,14 +49,22 @@ DSA/
 │   ├── Sol_07.py           # Maximum Subarray Sum (Kadane's Algorithm in O(n) time)
 │   └── Week_4_coding challenge.pdf
 │
-└── Assignment 05/          # Linked Lists, Monotonic Stacks, Min Stack & Stack/Queue Design
-    ├── Sol 01.py           # Reverse Linked List II (In-place reversal between bounds left and right)
-    ├── Sol 02.py           # Odd Even Linked List (Reorder nodes by parity of their index in O(1) space)
-    ├── Sol 03.py           # Maximal Rectangle (Largest rectangle in binary matrix via monotonic stack)
-    ├── Sol 04.py           # Min Stack (LIFO stack with O(1) push, pop, top, and getMin)
-    ├── Sol 05.py           # Implement Stack using Queues (LIFO stack using collections.deque)
-    ├── Sol 06.py           # Implement Queue using Stacks (FIFO queue using two stacks with amortized O(1))
-    └── Weekly Code 5 - B16 (1)__1793707486-67c994ac8862f33c4e764a16.pdf
+├── Assignment 05/          # Linked Lists, Monotonic Stacks, Min Stack & Stack/Queue Design
+│   ├── Sol 01.py           # Reverse Linked List II (In-place reversal between bounds left and right)
+│   ├── Sol 02.py           # Odd Even Linked List (Reorder nodes by parity of their index in O(1) space)
+│   ├── Sol 03.py           # Maximal Rectangle (Largest rectangle in binary matrix via monotonic stack)
+│   ├── Sol 04.py           # Min Stack (LIFO stack with O(1) push, pop, top, and getMin)
+│   ├── Sol 05.py           # Implement Stack using Queues (LIFO stack using collections.deque)
+│   ├── Sol 06.py           # Implement Queue using Stacks (FIFO queue using two stacks with amortized O(1))
+│   └── Weekly Code 5 - B16 (1)__1793707486-67c994ac8862f33c4e764a16.pdf
+│
+└── Assignment 06/          # Linked Lists, Stack Simplification, Greedy & Intervals
+    ├── Sol 01.py           # Remove Nodes From Linked List (Reverse, filter by running max, reverse back)
+    ├── Sol 02.py           # Simplify Path (Unix canonical path using a stack)
+    ├── Sol 03.py           # Jump Game (Greedy max-reach traversal in O(n) time)
+    ├── Sol 04.py           # Merge Intervals (Sort and merge overlapping intervals)
+    ├── Sol 05.py           # Insert Interval (Linear scan to insert and merge into sorted intervals)
+    └── Coding challenge Week 6 - Sabudh Foundation__1794232932-67c994ac8862f33c4e764a16.pdf
 ```
 
 ---
@@ -100,6 +108,12 @@ DSA/
 - **Min Stack (`Assignment 05/Sol 04.py`)**: Tracks running minimums alongside the main stack to achieve $O(1)$ time for push, pop, top, and getMin.
 - **Cross-Structure Implementations (`Assignment 05/Sol 05.py`, `Sol 06.py`)**: Implements a LIFO stack using FIFO queues (`deque`) and a FIFO queue using dual LIFO stacks with amortized $O(1)$ push and pop operations.
 
+### 9. Intervals, Greedy & Path Simplification
+- **Remove Nodes From Linked List (`Assignment 06/Sol 01.py`)**: Reverses the list, filters out nodes smaller than the running maximum in $O(n)$ time and $O(1)$ space, then reverses back.
+- **Simplify Path (`Assignment 06/Sol 02.py`)**: Parses Unix-style directory tokens with a stack to resolve `.` and `..` into a canonical path.
+- **Jump Game (`Assignment 06/Sol 03.py`)**: Tracks the furthest reachable index greedily in a single $O(n)$ pass with $O(1)$ space.
+- **Merge & Insert Intervals (`Assignment 06/Sol 04.py`, `Sol 05.py`)**: Merges overlapping intervals after sorting ($O(n \log n)$) and inserts a new interval into an already sorted list in a single $O(n)$ pass.
+
 ---
 
 ## 🚀 How to Run
@@ -126,4 +140,9 @@ python "DSA/Assignment 04/Sol_07.py"
 python "DSA/Assignment 05/Sol 01.py"
 python "DSA/Assignment 05/Sol 03.py"
 python "DSA/Assignment 05/Sol 04.py"
+
+# Assignment 06
+python "DSA/Assignment 06/Sol 01.py"
+python "DSA/Assignment 06/Sol 02.py"
+python "DSA/Assignment 06/Sol 04.py"
 ```

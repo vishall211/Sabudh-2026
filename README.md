@@ -52,6 +52,7 @@ SABUDH - 26/
 │   ├── Assignment 03/                              # Heaps, LRU Cache, Matrices & Linked Lists
 │   ├── Assignment 04/                              # Bit Manipulation, Kadane's Algorithm & Linked Lists
 │   ├── Assignment 05/                              # Monotonic Stack, MinStack, Queues & Linked Lists
+│   ├── Assignment 06/                              # Linked Lists, Stack Simplification, Greedy & Intervals
 │   └── README.md
 │
 ├── ML/                                             # Machine Learning & Applied Analytics
@@ -149,6 +150,11 @@ SABUDH - 26/
   - Maximal Rectangle (`Sol 03.py`) in binary matrices using histogram heights and a monotonic stack.
   - Min Stack design (`Sol 04.py`) with $O(1)$ push, pop, top, and getMin.
   - Cross-structure ADTs: Stack using Queues (`Sol 05.py`) and Queue using Stacks (`Sol 06.py`).
+- **Assignment 06 (Linked Lists, Stack Simplification, Greedy & Intervals)**:
+  - Remove Nodes From Linked List (`Sol 01.py`) by reversing, filtering with a running maximum in $O(1)$ space, and reversing back.
+  - Simplify Path (`Sol 02.py`) using a stack to resolve Unix-style `.` and `..` directory tokens.
+  - Jump Game (`Sol 03.py`) with a greedy max-reach pass in $O(n)$ time and $O(1)$ space.
+  - Merge Intervals (`Sol 04.py`) and Insert Interval (`Sol 05.py`) for combining overlapping ranges.
 
 👉 *Details in [`DSA/README.md`](DSA/README.md)*
 
