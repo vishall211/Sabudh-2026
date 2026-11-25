@@ -54,6 +54,7 @@ SABUDH - 26/
 │   ├── Assignment 05/                              # Monotonic Stack, MinStack, Queues & Linked Lists
 │   ├── Assignment 06/                              # Linked Lists, Stack Simplification, Greedy & Intervals
 │   ├── Assignment 07/                              # Dynamic Programming, Hash Sets, Binary Search & BST
+│   ├── Assignment 08/                              # Binary Trees & Singly Linked Lists
 │   └── README.md
 │
 ├── ML/                                             # Machine Learning & Applied Analytics
@@ -161,6 +162,9 @@ SABUDH - 26/
   - Longest Consecutive Sequence (`Sol 02.py`) in $O(n)$ time using a hash set.
   - Longest Increasing Subsequence (`Sol 03.py`) in $O(n \log n)$ time with binary search.
   - BST single-child preorder check (`Sol 04.py`) and smallest missing sorted element (`Sol 05.py`).
+- **Assignment 08 (Binary Trees & Singly Linked Lists)**:
+  - Maximum depth (`Sol 01.py`), identical tree check (`Sol 02.py`), subtree target sum (`Sol 03.py`), and SumTree validation (`Sol 04.py`).
+  - Linked list operations: insert before middle (`Sol 05.py`), delete last occurrence (`Sol 06.py`), and rotate right by $k$ places (`Sol 07.py`).
 
 👉 *Details in [`DSA/README.md`](DSA/README.md)*
 

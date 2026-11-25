@@ -66,14 +66,24 @@ DSA/
 │   ├── Sol 05.py           # Insert Interval (Linear scan to insert and merge into sorted intervals)
 │   └── Coding challenge Week 6 - Sabudh Foundation__1794232932-67c994ac8862f33c4e764a16.pdf
 │
-└── Assignment 07/          # Dynamic Programming, Hash Sets, Binary Search & BST
-    ├── Sol 01.py           # Longest Common Subsequence (2D DP in O(m * n) time)
-    ├── Sol 02.py           # Longest Consecutive Sequence (Hash set in O(n) time)
-    ├── Sol 03.py           # Longest Increasing Subsequence (Binary search tails in O(n log n) time)
-    ├── Sol 04.py           # Check if each internal node of a BST has one child (Preorder O(n) check)
-    ├── Sol 05.py           # Find Smallest Missing Element from Sorted Array (Binary search in O(log n))
-    ├── Sol 06.py           # Edit Distance (2D DP for insert, delete, replace operations)
-    └── Coding challenge Week 7 - B16__1778157037-67c994ac8862f33c4e764a16.pdf
+├── Assignment 07/          # Dynamic Programming, Hash Sets, Binary Search & BST
+│   ├── Sol 01.py           # Longest Common Subsequence (2D DP in O(m * n) time)
+│   ├── Sol 02.py           # Longest Consecutive Sequence (Hash set in O(n) time)
+│   ├── Sol 03.py           # Longest Increasing Subsequence (Binary search tails in O(n log n) time)
+│   ├── Sol 04.py           # Check if each internal node of a BST has one child (Preorder O(n) check)
+│   ├── Sol 05.py           # Find Smallest Missing Element from Sorted Array (Binary search in O(log n))
+│   ├── Sol 06.py           # Edit Distance (2D DP for insert, delete, replace operations)
+│   └── Coding challenge Week 7 - B16__1778157037-67c994ac8862f33c4e764a16.pdf
+│
+└── Assignment 08/          # Binary Trees & Singly Linked Lists
+    ├── Sol 01.py           # Maximum Depth of Binary Tree (Recursive DFS)
+    ├── Sol 02.py           # Identical Binary Trees (Recursive structure & value comparison)
+    ├── Sol 03.py           # Subtree with Given Sum (Post-order subtree sum check)
+    ├── Sol 04.py           # SumTree Validation (O(n) bottom-up subtree sum verification)
+    ├── Sol 05.py           # Insert Node Before Middle of Linked List (Fast & slow pointers)
+    ├── Sol 06.py           # Delete Last Occurrence in Linked List (Single-pass pointer tracking)
+    ├── Sol 07.py           # Rotate Linked List Right by k Places (Circular link & break)
+    └── Weekly coding challenge - 8 B16__1778568272-67c994ac8862f33c4e764a16.pdf
 ```
 
 ---
@@ -129,6 +139,11 @@ DSA/
 - **Longest Consecutive Sequence (`Assignment 07/Sol 02.py`)**: Uses a `set` to count consecutive runs only from sequence starting points in $O(n)$ time.
 - **BST Preorder & Sorted Missing Element (`Assignment 07/Sol 04.py`, `Sol 05.py`)**: Verifies single-child BST internal nodes in $O(n)$ time and finds the smallest missing non-negative integer in a sorted array via binary search in $O(\log n)$ time.
 
+### 11. Binary Trees & Linked List Operations
+- **Tree Depth & Equivalence (`Assignment 08/Sol 01.py`, `Sol 02.py`)**: Computes maximum binary tree depth and checks structural and value equivalence between two trees recursively in $O(n)$ time.
+- **Subtree Sums & SumTree (`Assignment 08/Sol 03.py`, `Sol 04.py`)**: Uses bottom-up post-order traversal to detect subtrees matching a target sum and validate SumTree properties in a single $O(n)$ pass.
+- **Linked List Insertion, Deletion & Rotation (`Assignment 08/Sol 05.py`, `Sol 06.py`, `Sol 07.py`)**: Inserts a node before the middle via fast/slow pointers, deletes the last occurrence of a key in one pass, and rotates a list right by $k$ places by forming and breaking a cycle.
+
 ---
 
 ## 🚀 How to Run
@@ -165,4 +180,9 @@ python "DSA/Assignment 06/Sol 04.py"
 python "DSA/Assignment 07/Sol 01.py"
 python "DSA/Assignment 07/Sol 03.py"
 python "DSA/Assignment 07/Sol 06.py"
+
+# Assignment 08
+python "DSA/Assignment 08/Sol 01.py"
+python "DSA/Assignment 08/Sol 04.py"
+python "DSA/Assignment 08/Sol 07.py"
 ```
