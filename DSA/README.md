@@ -58,13 +58,22 @@ DSA/
 │   ├── Sol 06.py           # Implement Queue using Stacks (FIFO queue using two stacks with amortized O(1))
 │   └── Weekly Code 5 - B16 (1)__1793707486-67c994ac8862f33c4e764a16.pdf
 │
-└── Assignment 06/          # Linked Lists, Stack Simplification, Greedy & Intervals
-    ├── Sol 01.py           # Remove Nodes From Linked List (Reverse, filter by running max, reverse back)
-    ├── Sol 02.py           # Simplify Path (Unix canonical path using a stack)
-    ├── Sol 03.py           # Jump Game (Greedy max-reach traversal in O(n) time)
-    ├── Sol 04.py           # Merge Intervals (Sort and merge overlapping intervals)
-    ├── Sol 05.py           # Insert Interval (Linear scan to insert and merge into sorted intervals)
-    └── Coding challenge Week 6 - Sabudh Foundation__1794232932-67c994ac8862f33c4e764a16.pdf
+├── Assignment 06/          # Linked Lists, Stack Simplification, Greedy & Intervals
+│   ├── Sol 01.py           # Remove Nodes From Linked List (Reverse, filter by running max, reverse back)
+│   ├── Sol 02.py           # Simplify Path (Unix canonical path using a stack)
+│   ├── Sol 03.py           # Jump Game (Greedy max-reach traversal in O(n) time)
+│   ├── Sol 04.py           # Merge Intervals (Sort and merge overlapping intervals)
+│   ├── Sol 05.py           # Insert Interval (Linear scan to insert and merge into sorted intervals)
+│   └── Coding challenge Week 6 - Sabudh Foundation__1794232932-67c994ac8862f33c4e764a16.pdf
+│
+└── Assignment 07/          # Dynamic Programming, Hash Sets, Binary Search & BST
+    ├── Sol 01.py           # Longest Common Subsequence (2D DP in O(m * n) time)
+    ├── Sol 02.py           # Longest Consecutive Sequence (Hash set in O(n) time)
+    ├── Sol 03.py           # Longest Increasing Subsequence (Binary search tails in O(n log n) time)
+    ├── Sol 04.py           # Check if each internal node of a BST has one child (Preorder O(n) check)
+    ├── Sol 05.py           # Find Smallest Missing Element from Sorted Array (Binary search in O(log n))
+    ├── Sol 06.py           # Edit Distance (2D DP for insert, delete, replace operations)
+    └── Coding challenge Week 7 - B16__1778157037-67c994ac8862f33c4e764a16.pdf
 ```
 
 ---
@@ -114,6 +123,12 @@ DSA/
 - **Jump Game (`Assignment 06/Sol 03.py`)**: Tracks the furthest reachable index greedily in a single $O(n)$ pass with $O(1)$ space.
 - **Merge & Insert Intervals (`Assignment 06/Sol 04.py`, `Sol 05.py`)**: Merges overlapping intervals after sorting ($O(n \log n)$) and inserts a new interval into an already sorted list in a single $O(n)$ pass.
 
+### 10. Dynamic Programming, Trees & Binary Search
+- **Longest Common Subsequence & Edit Distance (`Assignment 07/Sol 01.py`, `Sol 06.py`)**: Classic 2D dynamic programming tables solving string subsequence matching and minimum edit operations (insert, delete, replace) in $O(m \cdot n)$ time.
+- **Longest Increasing Subsequence (`Assignment 07/Sol 03.py`)**: Maintains a sorted tails array with binary search to compute LIS length in $O(n \log n)$ time.
+- **Longest Consecutive Sequence (`Assignment 07/Sol 02.py`)**: Uses a `set` to count consecutive runs only from sequence starting points in $O(n)$ time.
+- **BST Preorder & Sorted Missing Element (`Assignment 07/Sol 04.py`, `Sol 05.py`)**: Verifies single-child BST internal nodes in $O(n)$ time and finds the smallest missing non-negative integer in a sorted array via binary search in $O(\log n)$ time.
+
 ---
 
 ## 🚀 How to Run
@@ -145,4 +160,9 @@ python "DSA/Assignment 05/Sol 04.py"
 python "DSA/Assignment 06/Sol 01.py"
 python "DSA/Assignment 06/Sol 02.py"
 python "DSA/Assignment 06/Sol 04.py"
+
+# Assignment 07
+python "DSA/Assignment 07/Sol 01.py"
+python "DSA/Assignment 07/Sol 03.py"
+python "DSA/Assignment 07/Sol 06.py"
 ```

@@ -53,6 +53,7 @@ SABUDH - 26/
 │   ├── Assignment 04/                              # Bit Manipulation, Kadane's Algorithm & Linked Lists
 │   ├── Assignment 05/                              # Monotonic Stack, MinStack, Queues & Linked Lists
 │   ├── Assignment 06/                              # Linked Lists, Stack Simplification, Greedy & Intervals
+│   ├── Assignment 07/                              # Dynamic Programming, Hash Sets, Binary Search & BST
 │   └── README.md
 │
 ├── ML/                                             # Machine Learning & Applied Analytics
@@ -155,6 +156,11 @@ SABUDH - 26/
   - Simplify Path (`Sol 02.py`) using a stack to resolve Unix-style `.` and `..` directory tokens.
   - Jump Game (`Sol 03.py`) with a greedy max-reach pass in $O(n)$ time and $O(1)$ space.
   - Merge Intervals (`Sol 04.py`) and Insert Interval (`Sol 05.py`) for combining overlapping ranges.
+- **Assignment 07 (Dynamic Programming, Hash Sets, Binary Search & BST)**:
+  - Longest Common Subsequence (`Sol 01.py`) and Edit Distance (`Sol 06.py`) using 2D dynamic programming.
+  - Longest Consecutive Sequence (`Sol 02.py`) in $O(n)$ time using a hash set.
+  - Longest Increasing Subsequence (`Sol 03.py`) in $O(n \log n)$ time with binary search.
+  - BST single-child preorder check (`Sol 04.py`) and smallest missing sorted element (`Sol 05.py`).
 
 👉 *Details in [`DSA/README.md`](DSA/README.md)*
 
