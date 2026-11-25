@@ -44,8 +44,16 @@ ML/
 │   ├── Answer 04.pdf                           # Detailed analytical solution for Problem 4
 │   └── Model Evaluation - B16 (1)__1773221182-67c994ac8862f33c4e764a16.pdf
 │
-├── linear_algebra_for_machine_learning.md       # Comprehensive study guide on Linear Algebra for ML
-└── Logistic_Regression.pdf                     # Core concepts presentation & notes
+└── Assignment 06 – Predicting the price of a Football player/ # End-to-End Football Market Value Prediction
+    ├── Task 01 – EDA.py                        # Seaborn exploratory data analysis
+    ├── Task 2 – Build Regression Models.py     # 8 regression algorithms comparison
+    ├── Task 3 – Hyperparameter Tuning.py       # GridSearchCV hyperparameter tuning
+    ├── Task 4 – Model Selection.py             # 5-fold KFold cross-validation model selection
+    ├── Task 5 –  Genetic Algorithm for KNN Feature Weighting.py # GA-weighted KNN with diversity
+    ├── Task 6 – RESTful Web Service.py         # Flask REST API serving predictions
+    ├── Predicting_Football_Player_Market_Value.ipynb # Unified end-to-end notebook
+    ├── Data set__1682565729-62fcaa4ea2bc0b6439d2306a.csv
+    └── Predicting the price of a Football player_ B16__1777537581-67c994ac8862f33c4e764a16.pdf
 ```
 
 ---
@@ -83,6 +91,15 @@ An applied machine learning workflow conducted on over 40,000 trending YouTube v
 - **Threshold Optimization & ROC-AUC**: Quantitative analysis of operating thresholds, True Positive Rate (TPR) vs. False Positive Rate (FPR) trade-offs, and Area Under the Curve (AUC) invariance under class imbalance.
 - **Validation Schemes**: Hold-out vs. Stratified $K$-fold cross-validation guarantees, data leakage prevention, and model generalization bounds.
 
+### Assignment 06: Predicting the Price of a Football Player
+An end-to-end regression, evolutionary feature-weighting, and API deployment project on English Premier League player market values:
+1. **Exploratory Data Analysis (`Task 01 – EDA.py`)**: Seaborn distributions, position and big-club boxplots, scatterplots, and correlation heatmap.
+2. **8-Model Benchmark (`Task 2 – Build Regression Models.py`)**: Trains Linear, Lasso, Ridge, KNN, SVR, Decision Tree, Random Forest, and Gradient Boosting pipelines; Random Forest achieves `RMSE = 4.19` ($R^2 = 0.8553$).
+3. **Hyperparameter Tuning (`Task 3 – Hyperparameter Tuning.py`)**: Tunes 7 models with 5-fold `GridSearchCV` and exports `Task_3_Best_Model.pkl`.
+4. **Model Selection (`Task 4 – Model Selection.py`)**: Runs 5-fold `KFold` cross-validation, selecting Gradient Boosting (`Average CV RMSE = 5.87`) and saving `Task_4_Best_Model.pkl`.
+5. **GA-Weighted KNN (`Task 5 –  Genetic Algorithm for KNN Feature Weighting.py`)**: Learns feature weights via Genetic Algorithm with random-immigrant diversity, reducing KNN test RMSE from `5.58` to `4.75` ($R^2 = 0.8132$).
+6. **RESTful Web Service (`Task 6 – RESTful Web Service.py`)**: Flask API (`/`, `/predict`) serving live market value predictions from `Task_4_Best_Model.pkl`.
+
 ---
 
 ## 🚀 How to Run
@@ -93,4 +110,7 @@ python "ML/Assignment 01 – Linear Regression/Sol_1.py"
 
 # Run YouTube Analytics Task 01
 python "ML/Assignment 04 – YouTube Analytics Coursework/Task 01 - Load Dataset & Define Targets.py"
+
+# Run Football Player Market Value Flask API
+python "ML/Assignment 06 – Predicting the price of a Football player/Task 6 – RESTful Web Service.py"
 ```

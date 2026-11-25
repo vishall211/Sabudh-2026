@@ -1,0 +1,8 @@
+Model,Best Parameters,Best CV RMSE,Test MAE,Test RMSE,Test R2
+Gradient Boosting,"{'model__learning_rate': 0.1, 'model__max_depth': 2, 'model__n_estimators': 200}",5.519227389898071,3.285491624266295,4.910279776127288,0.800821871892788
+SVR,"{'model__C': 100, 'model__epsilon': 0.5, 'model__kernel': 'rbf'}",5.735613541505055,3.0933232438030998,4.542896012944574,0.8295116284507809
+Random Forest,"{'model__max_depth': None, 'model__min_samples_leaf': 2, 'model__min_samples_split': 2, 'model__n_estimators': 100}",6.11549630917866,2.9143441257816267,4.196711094504386,0.8545052519743934
+Ridge,{'model__alpha': 10},6.137520419946034,3.4603302825472695,4.522653083880753,0.8310276195038759
+Lasso,{'model__alpha': 0.1},6.272786097918006,3.5793117836311357,4.61153203003887,0.8243210894360714
+KNN,"{'model__n_neighbors': 7, 'model__weights': 'distance'}",6.5753458538687,3.3536042582509564,4.590673019488976,0.8259067666328053
+Decision Tree,"{'model__max_depth': 15, 'model__min_samples_leaf': 1, 'model__min_samples_split': 10}",7.941420689751991,4.302734254992319,6.085418044845757,0.6940784953629866

@@ -63,8 +63,7 @@ SABUDH - 26/
 │   ├── Assignment 03 – Bayesian Learning Problem Set/ # Bayesian inference & coursework
 │   ├── Assignment 04 – YouTube Analytics Coursework/  # End-to-end Machine Learning pipeline (40k+ videos)
 │   ├── Assignment 05 – Model Evaluation/           # Precision, Recall, ROC-AUC & Error Diagnostics
-│   ├── linear_algebra_for_machine_learning.md      # Comprehensive Linear Algebra study notes
-│   ├── Logistic_Regression.pdf                     # Core classification lecture slides & notes
+│   ├── Assignment 06 – Predicting the price of a Football player/ # Regression, GA-KNN & Flask API
 │   └── README.md
 │
 ├── NLP/                                            # Natural Language Processing & Text Analytics
@@ -191,7 +190,10 @@ SABUDH - 26/
 - **Assignment 05 (Model Evaluation Diagnostics)**:
   - Rigorous evaluation of precision, recall, specificity, and $F_\beta$ scores under class skew.
   - Decision threshold optimization, ROC-AUC trade-offs, and confusion matrix error decomposition.
-- **Foundational Notes**: Detailed tutorial guide on Linear Algebra for Machine Learning (`linear_algebra_for_machine_learning.md`).
+- **Assignment 06 (Predicting Football Player Market Value)**:
+  - Seaborn EDA, 8-model regression pipeline benchmark (Random Forest $R^2 = 0.8553$), 5-fold `GridSearchCV` tuning, and `KFold` model selection.
+  - Custom Genetic Algorithm with random-immigrant diversity for KNN feature weighting (improving KNN RMSE from `5.58` to `4.75`).
+  - Deployed as a Flask RESTful Web Service (`/predict`).
 
 👉 *Details in [`ML/README.md`](ML/README.md)*
 
